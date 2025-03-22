@@ -1,0 +1,421 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.body-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.primary-color{
+    color: #F9F7F5;
+}
+.color-rojo{
+   color:#6B0504
+}
+.body-container{
+    background-color: #F9F7F5;
+    height: 100vh;
+}
+.container-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    
+}
+.container-portada{
+    margin-top: 42px;
+    /* display: flex;
+    justify-content: center; */
+}
+.container-portada{
+    width: 900px;
+}
+.container-portada img{
+    /* border: 5px solid blue; */
+    border-radius: 5%;
+    width: 100%;
+}
+.container-presentacion{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 22px;
+}
+.formulario-contacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+header{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+
+}
+.opciones-menu{
+ margin-right: 42px;
+}
+.containter-menu .containter-lista-opciones .opciones-menu a {
+    text-decoration: none;
+    color: #000; 
+    transition: color 0.3s ease; 
+}
+.containter-menu .containter-lista-opciones .opciones-menu a :hover {
+    color:#6B0504;
+    transition: 2s;
+}
+.containter-lista-opciones{
+    display: flex;
+    list-style: none; 
+    padding: 0;
+    margin: 0; 
+}
+.container-logo img{
+    width: 120px;
+    margin-right: 140px;
+}
+.titulo-producto h1{
+    margin-top: 56px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+.container-productos{
+    display: grid;
+    height: 900px;
+    place-items: center;
+    font-size: 16px;
+    grid-template-columns: repeat(6, auto);
+    gap: 10px;
+    grid-template-rows: repeat(2, 400px);;
+}
+.box-products{
+    width: 240px;
+    height: 400px;
+    margin-top: 50px;
+    font-size: 1em;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+.box-products:hover{
+    transform: translateY(-6px);
+}
+.box{
+    margin: 10px 0px 13.5px ;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.box img{
+    border: 5px solid #d4a373;
+}
+.price{
+    font-size: 15pt;
+    color: red;
+}
+.button{
+    width: 100%;
+    height: 43px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #d4a373;
+    transition: 1s;
+    color: white;
+}
+.button:hover {
+    background-color: #f37b03;
+    transition: 2s;
+}
+
+.H1{
+    margin-top: 181px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.titulo-nosotros h1{
+    margin-top: 56px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.container-acerca{
+    background-color: #fff;
+    border-radius: 12px;
+    font-size: 10px;
+    padding: 26px;
+    margin: auto;
+    width: 40%;
+}
+
+.container-acerca p {
+    text-align: justify;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 2em;
+}
+.container-contacto{
+    margin-top: 87px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+
+.container-visitanos{
+    background-color: #fff;
+    padding: 16px;
+    margin-right: 28px;
+    width: 40%;
+    border-radius: 12px;
+}
+
+.formulario-contacto{
+    background-color: #fff;
+    padding: 16px;
+    width: 50%;
+    border-radius: 12px;
+    justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.titulo-contactanos h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #a89f93; 
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    outline: none;
+}
+
+
+input:focus, textarea:focus {
+    border-color: #d4a373;
+   
+}
+input::placeholder, textarea::placeholder {
+    color: #c2b7aa; 
+    font-style: italic;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d4a373; 
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #f37b03;
+    transition: 2s;
+}
+
+.confi-textarea{
+    min-height: 150px;
+    max-height: 300px;
+}
+.main-iframe{
+    margin-top: 20px;
+    text-align: center;
+}
+.footer-container{
+    background-color: #362D27;
+    width: 100%;
+    margin-top: 56px;
+    padding-top: 28px;
+    font-size: 16px;
+}
+
+.derechos{
+    background-color: #2A2420;
+    color: #fff;
+    padding: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin-top: 36px;
+    font-size: 1em;
+}
+
+
+.footer-subcontainer{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+}
+
+.texto-footer{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+}
+
+.titulo-footer{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.container-info{
+    width: 30%;
+    margin-right: 46px;
+}
+
+.contactanos{
+    width: 30%;
+}
+/* Mantener el footer siempre abajo */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 1200px) {
+    .container-portada {
+        width: 80%;
+    }
+    .container-productos {
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(3, 400px);
+    }
+    .container-info,
+    .contactanos {
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-portada {
+        width: 90%;
+    }
+    .container-productos {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, 400px);
+    }
+    .container-acerca {
+        width: 60%;
+    }
+    .container-contacto {
+        flex-direction: column;
+        height: auto;
+    }
+    .container-visitanos,
+    .formulario-contacto {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-portada {
+        width: 95%;
+    }
+    .container-productos {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, 400px);
+    }
+    .container-acerca {
+        width: 80%;
+    }
+    .container-info,
+    .contactanos {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-portada {
+        width: 100%;
+    }
+    .container-productos {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(6, 400px);
+    }
+    .container-acerca {
+        width: 90%;
+    }
+    .container-logo img {
+        width: 80px;
+        margin-right: 0;
+    }
+    .footer-subcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-info,
+    .contactanos {
+        width: 100%;
+        text-align: center;
+    }
+}
