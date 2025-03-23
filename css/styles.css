@@ -1,11 +1,11 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 html, body {
-    height: 100%;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 .body-container {
     flex: 1;
@@ -20,7 +20,7 @@ html, body {
 }
 .body-container{
     background-color: #F9F7F5;
-    height: 100vh;
+    flex-grow: 1;
 }
 .container-principal{
     display: flex;
@@ -98,9 +98,9 @@ header{
     height: 900px;
     place-items: center;
     font-size: 16px;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(5, auto);
     gap: 10px;
-    grid-template-rows: repeat(2, 400px);;
+    grid-template-rows: repeat(5, 400px);;
 }
 .box-products{
     width: 240px;
@@ -109,7 +109,7 @@ header{
     font-size: 1em;
     text-align: center;
     background-color: white;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 60%);
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
@@ -156,7 +156,7 @@ header{
       "wdth" 100;
 }
 .titulo-nosotros h1{
-    margin-top: 56px;
+    margin-top: 50px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -169,6 +169,7 @@ header{
     font-size: 10px;
     padding: 26px;
     margin: auto;
+    margin-bottom: 50px;
     width: 40%;
 }
 
@@ -271,6 +272,10 @@ button:hover {
     min-height: 150px;
     max-height: 300px;
 }
+iframe{
+    width: 95%;
+    height: 400px;
+}
 .main-iframe{
     margin-top: 20px;
     text-align: center;
@@ -278,7 +283,7 @@ button:hover {
 .footer-container{
     background-color: #362D27;
     width: 100%;
-    margin-top: 56px;
+    margin-top: auto;
     padding-top: 28px;
     font-size: 16px;
 }
@@ -377,6 +382,10 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
+    .container-logo img {
+        width: 80px;
+        margin-right: 0;
+    }
     .container-portada {
         width: 95%;
     }
@@ -385,12 +394,16 @@ html, body {
         grid-template-rows: repeat(4, 400px);
     }
     .container-acerca {
-        width: 80%;
+        width: 90%;
     }
     .container-info,
     .contactanos {
         width: 100%;
         margin-right: 0;
+    }
+    iframe{
+        width: 95%;
+        height: 400px;
     }
 }
 
